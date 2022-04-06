@@ -8,7 +8,6 @@ import {
   TextInput,
 } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import styles from './style';
 import { RootStackParamList } from '~/App';
@@ -73,7 +72,7 @@ function TVShowList({ navigation }: TVShowListProps) {
   };
 
   return (
-    <SafeAreaView style={styles.container} edges={['top']}>
+    <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#fff" />
 
       <FlatList
@@ -131,7 +130,7 @@ function TVShowList({ navigation }: TVShowListProps) {
           }
         }}
       />
-    </SafeAreaView>
+    </View>
   );
 }
 

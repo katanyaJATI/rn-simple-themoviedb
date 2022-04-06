@@ -24,7 +24,7 @@ function MainNavigator() {
       <Stack.Screen
         name="TVShowList"
         component={TVShowList}
-        options={{ headerShown: false }}
+        options={{ headerTitle: 'TV Show' }}
       />
     </Stack.Navigator>
   );
