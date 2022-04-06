@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // screens
 import SplashScreen from './app/containers/SplashScreen';
-import TVShowList from './App/containers/TVShowList';
+import TVShowList from './app/containers/TVShowList';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +15,7 @@ export type RootStackParamList = {
   SplashScreen: undefined;
   MainNavigator: undefined;
   TVShowList: undefined;
+  MovieTVDetail: { id: number };
 };
 
 function MainNavigator() {

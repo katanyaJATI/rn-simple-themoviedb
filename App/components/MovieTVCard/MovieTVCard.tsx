@@ -9,16 +9,12 @@ import styles from './style';
 
 type MovieTVCardProps = {
   data: TVPopularType;
+  onPress: () => void;
 };
 
-function MovieTVCard({ data }: MovieTVCardProps) {
-  console.log({ data });
+function MovieTVCard({ data, onPress }: MovieTVCardProps) {
   return (
-    <TouchableOpacity
-      activeOpacity={0.6}
-      style={styles.item}
-      onPress={() => console.log('xxxxxxx')}
-    >
+    <TouchableOpacity activeOpacity={0.6} style={styles.item} onPress={onPress}>
       <View>
         <ImageBlurLoading
           source={{ uri: `${Config.IMG_URL_500}${data.backdrop_path}` }}
