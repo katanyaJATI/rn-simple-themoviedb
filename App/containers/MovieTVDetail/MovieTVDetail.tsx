@@ -67,7 +67,7 @@ function MovieTVDetail({ navigation, route }: MovieTVDetailProps) {
         </View>
       </ScrollView>
 
-      {!loading && <LoadingScreen />}
+      {loading && <LoadingScreen />}
     </View>
   );
 }
