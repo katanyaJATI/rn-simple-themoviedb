@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // screens
 import SplashScreen from './app/containers/SplashScreen';
 import TVShowList from './app/containers/TVShowList';
+import MovieTVDetail from './app/containers/MovieTVDetail';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,11 @@ function MainNavigator() {
         name="TVShowList"
         component={TVShowList}
         options={{ headerTitle: 'TV Show' }}
+      />
+      <Stack.Screen
+        name="MovieTVDetail"
+        component={MovieTVDetail}
+        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );
