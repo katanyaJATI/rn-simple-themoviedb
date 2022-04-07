@@ -59,11 +59,9 @@ $ cd android && ./gradlew assembleRelease
 ## ScreenShots
 
 ### TV Show
-<img src="./tvshow_ios.png" width="300">
-<img src="./tvshow_android.jpeg" width="300">
-<br /><br />
-
+<img src="./tvshow_ios.png" width="300" hspace="20">
+<img src="./tvshow_android.jpeg" width="300" hspace="20">
 
 ### TV Show Detail
-<img src="./tvshow_detail_ios.png" width="300">
-<img src="./tvshow_detail_android.jpeg" width="300">
+<img src="./tvshow_detail_ios.png" width="300" hspace="20">
+<img src="./tvshow_detail_android.jpeg" width="300" hspace="20">
