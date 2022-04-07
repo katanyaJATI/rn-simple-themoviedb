@@ -26,7 +26,9 @@ export type TextProps = RNTextProps & {
     | 'semiBold12'
     | 'semiBold14'
     | 'semiBold16'
-    | 'bold14';
+    | 'bold14'
+    | 'bold16'
+    | 'bold20';
   align?: 'center' | 'left' | 'right' | 'auto' | 'justify';
   children: React.ReactNode;
   flex?: boolean;
@@ -104,6 +106,14 @@ const styles = StyleSheet.create({
   bold14: {
     fontFamily: 'Montserrat-Bold',
     fontSize: 14 + RESPONSIVE,
+  },
+  bold16: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 16 + RESPONSIVE,
+  },
+  bold20: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 20 + RESPONSIVE,
   },
 });
 
