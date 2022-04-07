@@ -79,8 +79,8 @@ function TVShowList({ navigation }: TVShowListProps) {
         style={styles.content}
         refreshControl={
           <RefreshControl
-            tintColor={'#3775FF'}
-            colors={['#3775FF']}
+            tintColor={Colors.primary}
+            colors={[Colors.primary]}
             refreshing={loading}
             onRefresh={_getTVPopular}
           />

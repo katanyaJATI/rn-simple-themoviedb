@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StatusBar, View, ScrollView } from 'react-native';
+import { StatusBar, View, ScrollView, RefreshControl } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import styles from './style';
@@ -44,7 +44,16 @@ function MovieTVDetail({ route }: MovieTVDetailProps) {
         backgroundColor={Colors.transparent}
       />
 
-      <ScrollView>
+      <ScrollView
+        refreshControl={
+          <RefreshControl
+            tintColor={Colors.primary}
+            colors={[Colors.primary]}
+            refreshing={loading}
+            onRefresh={_getTVDetails}
+          />
+        }
+      >
         <View>
           <ImageBlurLoading
             source={{ uri: `${Config.IMG_URL_500}${detail.backdrop_path}` }}
