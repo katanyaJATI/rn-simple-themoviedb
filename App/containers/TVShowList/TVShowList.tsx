@@ -46,12 +46,12 @@ function TVShowList({ navigation }: TVShowListProps) {
     const resp = await getTVPopular(_page);
     if (resp.status === 200) {
       let { page: currentPage, results, total_pages: totalPages } = resp.data;
-      let _nextPage = currentPage >= totalPages ? null : page + 1;
+      let _nextPage = currentPage >= totalPages ? null : _page;
       setNextPage(results.length ? _nextPage : null);
 
       if (loadMore) {
         setData([...data, ...results]);
-        setPage(page + 1);
+        setPage(_page);
       } else {
         setData(results);
         setPage(1);
