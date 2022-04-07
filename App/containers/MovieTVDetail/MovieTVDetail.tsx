@@ -15,7 +15,7 @@ type MovieTVDetailProps = NativeStackScreenProps<
   'MovieTVDetail'
 >;
 
-function MovieTVDetail({ navigation, route }: MovieTVDetailProps) {
+function MovieTVDetail({ route }: MovieTVDetailProps) {
   const [detail, setDetail] = useState<TVDetailsType>({} as TVDetailsType);
   const [loading, setLoading] = useState<boolean>(false);
 

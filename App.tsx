@@ -30,7 +30,10 @@ function MainNavigator() {
       <Stack.Screen
         name="MovieTVDetail"
         component={MovieTVDetail}
-        options={{ headerShown: false }}
+        options={{
+          headerTransparent: true,
+          headerTitle: '',
+        }}
       />
     </Stack.Navigator>
   );
