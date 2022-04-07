@@ -1,3 +1,10 @@
+/**
+ * Author:    Janaka Jati Lasmana
+ * Created:   06.04.2022
+ *
+ * (c) Copyright by Janaka Jati Lasmana.
+ **/
+
 import axios from 'axios';
 import { Config } from './index';
 const err = {
