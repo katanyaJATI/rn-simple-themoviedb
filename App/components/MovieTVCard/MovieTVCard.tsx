@@ -34,7 +34,7 @@ function MovieTVCard({ data, onPress }: MovieTVCardProps) {
           </View>
         </View>
         <Text type="regular10" numberOfLines={2}>
-          {data.overview}
+          {data.overview || '-'}
         </Text>
       </View>
     </TouchableOpacity>

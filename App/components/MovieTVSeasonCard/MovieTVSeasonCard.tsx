@@ -15,7 +15,7 @@ function MovieTVSeasonCard({ data }: MovieTVSeasonCardProps) {
   const isShortDesc = data.overview.length > 100;
   const [showAll, setShowAll] = useState<boolean>(!isShortDesc);
   const overview = showAll
-    ? data.overview
+    ? data.overview || '-'
     : `${data.overview.slice(0, 150)} ...`;
   return (
     <View style={styles.item}>

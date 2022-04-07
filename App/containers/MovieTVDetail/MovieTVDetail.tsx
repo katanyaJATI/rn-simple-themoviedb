@@ -55,7 +55,7 @@ function MovieTVDetail({ route }: MovieTVDetailProps) {
         <View style={styles.content}>
           <Text type="bold20">{detail.original_name}</Text>
           <Text style={styles.descText} color="greyscaleDesc">
-            {detail.overview}
+            {detail.overview || '-'}
           </Text>
 
           <View style={styles.season}>
